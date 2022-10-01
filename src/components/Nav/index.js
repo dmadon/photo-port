@@ -17,18 +17,18 @@ function Nav() {
     <header className="flex-row px-1">
       <h2>
         <a href="/">
-          <span role="img" aria-label="camera"> 📸</span> Oh Snap!
+          <span role="img" aria-label="camera"> 📸 </span> Oh Snap!
         </a>
       </h2>
       <nav>
         <ul className="flex-row">
           <li className="mx-2">
-            <a href="#about" onClick={() => handleClick()}>
+            <a href="#about">
               About me
             </a>
           </li>
           <li className={"mx-2"}>
-            <span onClick={() => handleClick()}>
+            <span>
               Contact
             </span>
           </li>
