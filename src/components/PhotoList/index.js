@@ -5,7 +5,7 @@ import Modal from '../Modal';
 function PhotoList({category}){ 
 
     const [photos] = useState([
-        {
+          {
             name: 'Grocery aisle',
             category: 'commercial',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricie',
@@ -106,7 +106,7 @@ function PhotoList({category}){
     const [currentPhoto,setCurrentPhoto] = useState();
     const toggleModal = (image,i)=>{
       setCurrentPhoto({...image,index:i})
-      setIsModalOpen(true);
+      setIsModalOpen(!isModalOpen);
     }
     const [isModalOpen,setIsModalOpen] = useState(false);
 
@@ -115,6 +115,7 @@ function PhotoList({category}){
             <div>
               {isModalOpen && <Modal 
                 currentPhoto={currentPhoto}
+                onClose={toggleModal}
               />
               }
             </div>

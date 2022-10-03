@@ -12,6 +12,7 @@ exports[`Gallery is rendering matches snapshot 1`] = `
       portraits of people in my life
     </p>
     <div>
+      <div />
       <div
         class="flex-row"
       >

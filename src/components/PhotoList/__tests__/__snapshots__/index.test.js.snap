@@ -3,6 +3,7 @@
 exports[`PhotoList is rendering renders 1`] = `
 <DocumentFragment>
   <div>
+    <div />
     <div
       class="flex-row"
     />
